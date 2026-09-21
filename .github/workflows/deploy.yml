@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to EdgeOne Makers
         run: |
           npx edgeone@latest makers deploy ./public \
-            -n blog \
+            -n andrewshihs-blog \
             -t "${{ secrets.EDGEONE_API_TOKEN }}" \
             -e production \
             -a global \
