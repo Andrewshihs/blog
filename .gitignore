@@ -1,0 +1,21 @@
+# Hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+.hugo_build.lock
+
+# 临时文件
+*.swp
+*~
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Node
+node_modules/
+
+# EdgeOne
+.edgeone/

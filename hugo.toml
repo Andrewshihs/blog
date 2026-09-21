@@ -1,0 +1,102 @@
+baseURL = "https://blog.andrewshihs.dev/"
+defaultContentLanguage = "zh"
+title = "Andrew's Blog"
+theme = "PaperMod"
+
+[languages.zh]
+  locale = "zh-CN"
+  label = "中文"
+
+# 分页
+paginate = 10
+summaryLength = 120
+
+# 启用 Emoji、相对链接、GitHub 风格脚注
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+
+# Section 配置
+[permalinks]
+  posts = "/:year/:slugorfilename/"
+
+# Markdown 引擎
+[markup.goldmark.renderer]
+  unsafe = true       # 允许内嵌 HTML
+
+[markup.highlight]
+  style = "github-dark"
+  noClasses = false
+
+# Sitemap
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 菜单
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 20
+
+# 主题参数 — PaperMod
+[params]
+  author = "Andrew"
+  description = "关于技术、生活与思考"
+
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = false
+  ShowToc = true
+  TocOpen = false
+
+  ShowAllPagesInArchive = true
+  UseHugoToc = true
+
+  comments = false
+
+  # 搜索（基于 Fuse.js）
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+  # 首页显示
+  [params.homeInfoParams]
+    Title = "嗨，我是 Andrew 👋"
+    Content = "一个写代码的人，这里记录技术思考和生活碎片。"
+
+  # 社交链接（按需开启）
+  [params.socialIcons]
+    # name = "github"
+    # url  = "https://github.com/Andrewshihs"
+
+  # 图片处理
+  [imaging]
+    resampleFilter = "Lanczos"
+    [imaging.jpeg]
+      quality = 85
+    [imaging.webp]
+      quality = 85
