@@ -1,4 +1,4 @@
-baseURL = "https://blog.andrewshihs.dev/"
+baseURL = "https://blog.bingtech.top/"
 defaultContentLanguage = "zh"
 title = "Andrew's Blog"
 theme = "PaperMod"
@@ -88,10 +88,10 @@ enableRobotsTXT = true
     Title = "嗨，我是 Andrew 👋"
     Content = "一个写代码的人，这里记录技术思考和生活碎片。"
 
-  # 社交链接（按需开启）
-  [params.socialIcons]
-    # name = "github"
-    # url  = "https://github.com/Andrewshihs"
+  # 社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url  = "https://github.com/Andrewshihs"
 
   # 图片处理
   [imaging]
